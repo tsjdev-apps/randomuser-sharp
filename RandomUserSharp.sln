@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomUserSharp", "src\Rand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomUserSharp.UnitTests", "tests\RandomUserSharp.UnitTests\RandomUserSharp.UnitTests.csproj", "{8BEE9A77-C361-4764-96F6-C2C993BB2584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomUserSharp.Console", "samples\RandomUserSharp.Console\RandomUserSharp.Console.csproj", "{56A7DD27-10B5-4447-96EA-182E002D857F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8BEE9A77-C361-4764-96F6-C2C993BB2584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BEE9A77-C361-4764-96F6-C2C993BB2584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BEE9A77-C361-4764-96F6-C2C993BB2584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A7DD27-10B5-4447-96EA-182E002D857F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A7DD27-10B5-4447-96EA-182E002D857F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A7DD27-10B5-4447-96EA-182E002D857F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A7DD27-10B5-4447-96EA-182E002D857F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
