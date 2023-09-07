@@ -12,7 +12,7 @@ namespace RandomUserSharp.Utils
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
-            return Uri.TryCreate(reader.Value.ToString(), UriKind.Absolute, out var uri) ? uri : null;
+            return Uri.TryCreate(reader.Value.ToString(), UriKind.Absolute, out Uri uri) ? uri : null;
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
