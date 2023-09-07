@@ -119,13 +119,13 @@ namespace RandomUserSharp.UnitTests
         [Fact]
         public async Task RandomUserClient_GetRandomUsersAsync_GetSpecificUserBySeed()
         {
-            var user = (await _randomUserClient.GetRandomUsersAsync(seed: "53f075655c8f5cc4")).FirstOrDefault();
+            var user = (await _randomUserClient.GetRandomUsersAsync(seed: "53f075655c8f5cc5")).FirstOrDefault();
 
             Assert.NotNull(user);
-            Assert.Equal(Gender.Male, user.Gender);
-            Assert.Equal("Mr", user.Name.Title);
-            Assert.Equal("Célsio", user.Name.First);
-            Assert.Equal("da Luz", user.Name.Last);
+            Assert.Equal(Gender.Female, user.Gender);
+            Assert.Equal("Miss", user.Name.Title);
+            Assert.Equal("Asma", user.Name.First);
+            Assert.Equal("Komduur", user.Name.Last);
         }
 
         [Fact]
