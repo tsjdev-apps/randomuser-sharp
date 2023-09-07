@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RandomUserSharp.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "get-users -n 10 -g Male"
+    }
+  }
+}
