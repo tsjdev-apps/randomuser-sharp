@@ -28,6 +28,12 @@ The `RandomUserSharpClient` provides one method, called `GetRandomUsersAsync`, w
 | `seed` | `string` | `null` | Indicates if you want generate the same set of users by using the same `seed`. |
 | `passwordOptions` | `PasswordOptions` | `null` | Indicates how the passwords should be generated. |
 
+## Sample
+
+Here is a screenshot of the `Console Application` using the [NuGet package](https://www.nuget.org/packages/RandomUserSharp) to get some random users and display them in a table on the console.
+
+![RandomUserSharpSample](./docs/randomusersharp-sample.png)
+
 ## Buy Me A Coffee
 
 I appreciate any form of support to keep my _Open Source_ activities going.
