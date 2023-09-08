@@ -4,12 +4,16 @@ using Spectre.Console;
 using Spectre.Console.Cli;
 using System.ComponentModel;
 
+
 var app = new CommandApp();
+
 app.Configure(config =>
 {
     config.AddCommand<GetUsersCommand>("get-users");
 });
+
 return await app.RunAsync(args);
+
 
 class GetUsersCommand : AsyncCommand<GetUsersCommand.Settings>
 {
@@ -47,6 +51,7 @@ class GetUsersCommand : AsyncCommand<GetUsersCommand.Settings>
             .AddColumn(new TableColumn("First Name").LeftAligned())
             .AddColumn(new TableColumn("Last Name").LeftAligned())
             .AddColumn(new TableColumn("Login").Centered())
+            .AddColumn(new TableColumn("Password").Centered())
             .AddColumn(new TableColumn("Age").RightAligned());
 
         AnsiConsole.Live(table)
@@ -54,7 +59,7 @@ class GetUsersCommand : AsyncCommand<GetUsersCommand.Settings>
             {
                 foreach (var user in users)
                 {
-                    table.AddRow(user.Name.First, user.Name.Last, user.Login.Username, user.DateOfBirth.Age.ToString());
+                    table.AddRow(user.Name.First, user.Name.Last, user.Login.Username, user.Login.Password, user.DateOfBirth.Age.ToString());
                     ctx.Refresh();
                     Thread.Sleep(750);
                 }
@@ -76,6 +81,6 @@ class GetUsersCommand : AsyncCommand<GetUsersCommand.Settings>
                 .AddChoices(new[] { Gender.Both, Gender.Female, Gender.Male }));
 
         static async Task<List<User>> GetRandomUsersAsync(int numberOfUsers, Gender gender)
-            => await new RandomUserClient().GetRandomUsersAsync(numberOfUsers, gender, new List<Nationality> { Nationality.GB, Nationality.DE });
+            => await new RandomUserClient().GetRandomUsersAsync(numberOfUsers, gender, new List<Nationality> { Nationality.GB, Nationality.DE }, passwordOptions: new PasswordOptions { MinLength = 6, MaxLength = 6, UseSpecialCharacters = false, UseUpperCaseCharacters = true, UseLowerCaseCharacters = true, UseNumbers = true });
     }
 }
