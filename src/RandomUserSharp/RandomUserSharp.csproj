@@ -4,7 +4,7 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Title>RandomUserSharp</Title>
-		<Version>3.0.0</Version>
+		<Version>3.1.0</Version>
 		<Authors>Thomas Sebastian Jensen</Authors>
 		<Company>tsjdev-apps.de</Company>
 		<Description>An unofficial .NET API wrapper for RandomUser.me</Description>
