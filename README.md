@@ -1,6 +1,6 @@
 # RandomUserSharp
 
-A .NET client wrapper for http://randomuser.me written in .NET Standard 1.1
+A .NET client wrapper for http://randomuser.me written in .NET Standard 2.0
 
 ## Installation
 
