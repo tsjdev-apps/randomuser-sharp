@@ -4,18 +4,18 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Title>RandomUserSharp</Title>
-		<Version>3.1.0</Version>
+		<Version>3.1.1</Version>
 		<Authors>Thomas Sebastian Jensen</Authors>
 		<Company>tsjdev-apps.de</Company>
 		<Description>An unofficial .NET API wrapper for RandomUser.me</Description>
 		<Copyright>© Thomas Sebastian Jensen | 2017-2023</Copyright>
 		<PackageProjectUrl>https://github.com/tsjdev-apps/randomuser-sharp</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/tsjdev-apps/randomuser-sharp</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageTags>RandomUser; Api; Mock; Wrapper; free</PackageTags>
 		<PackageReleaseNotes>
-			- Switch to API version 1.4
-			- Add options to generate different types of passwords
+			- Add icon for NuGet package
 			- Code improvements
 		</PackageReleaseNotes>
 		<NeutralLanguage>en</NeutralLanguage>
@@ -23,6 +23,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath=""/>
 	</ItemGroup>
 
 </Project>
